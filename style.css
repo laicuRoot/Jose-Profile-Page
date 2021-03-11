@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;500&family=Roboto:wght@500&display=swap');
+
+body {
+  background-color: #dddddd;
+  color: #222831;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 8px;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+}
+
+.name {
+  background-color: #30475e;
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+a {
+  color: #30475e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f05454;
+}
+
+.link-web {
+  text-decoration: none;
+  position: relative;
+}
+
+.link-web:after {
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #f05454;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.link-web:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 500px;
+  margin: 16px auto;
+  background-color: white;
+  padding: 32px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+}
+
+.map-card{
+  width: 500px;
+  margin: 16px auto;
+  background-color: white;
+  padding: 32px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+}
+
+.list-card {
+  margin: 4px 4px;
+}
+
+.img-square{
+  width: 124px;
+  height: 124px;
+  box-shadow: 2px 2px 3px #30475e;
+  transition: transform 250ms;
+}
+
+.img-square:hover {
+  z-index: 5;
+  transform: scale(1.2);
+}
+
+.footer{
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 32px;
+}
+
+.subtitle-color{
+  color: #f05454;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.avatar-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.link-container{
+  background-color: #ed6f6f;
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 24px;
+}
+
+.link-container:hover{
+  background-color:#e34040;
+  color: white;
+}
+
+.origin-text{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.icon-square{
+  font-size: 40px;
+  margin: 8px;
+}
+
+.icon-map{
+  color: #f05454;
+  font-size: 32px;
+  margin: 4px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 400px;
+  }
+
+  .card {
+    width: 350px;
+    margin: 8px auto;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+  }
+
+  .map{
+    width: 200px;
+    height: 150px;
+  }
+
+  .map-card{
+    width: 350px;
+    margin: 8px auto;
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+  }
+
+  .footer{
+    width: 350px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 16px;
+  }
+
+}
+
